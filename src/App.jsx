@@ -1,0 +1,44 @@
+import styles from './App.module.css'
+import income from './assets/income.svg'
+import expense from './assets/expense.svg'
+import total from './assets/total.svg'
+
+
+function App() {
+
+  return (
+    <div className={styles.page}>
+      <header>
+        <img src="/src/assets/logo.svg" alt="logo do site" />
+      </header>
+
+      <main>
+        <div className={styles.card}>
+          <div>
+            <span>Entradas</span>
+            <span><img src={income} alt="income" /></span>
+          </div>
+          <span>R$ 10,00</span>
+        </div>
+        <div className={styles.card}>
+          <div>
+            <span>Entradas</span>
+            <span><img src={expense} alt="income" /></span>
+          </div>
+          <span>R$ 10,00</span>
+        </div>
+        <div className={styles.card}>
+          <div>
+            <span>Entradas</span>
+            <span><img src={total} alt="income" /></span>
+          </div>
+          <span>R$ 10,00</span>
+        </div>
+        
+      </main>
+
+    </div>
+  )
+}
+
+export default App
