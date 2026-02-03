@@ -13,26 +13,29 @@ function App() {
       </header>
 
       <main>
+
         <div className={styles.card}>
           <div>
             <span>Entradas</span>
             <span><img src={income} alt="income" /></span>
           </div>
-          <span>R$ 10,00</span>
+          <span className={styles.value}>R$ 20,00</span>
         </div>
+
         <div className={styles.card}>
           <div>
-            <span>Entradas</span>
-            <span><img src={expense} alt="income" /></span>
+            <span>Saídas</span>
+            <span><img src={expense} alt="Expense" /></span>
           </div>
-          <span>R$ 10,00</span>
+          <span className={styles.value}>-R$ 10,00</span>
         </div>
+        
         <div className={styles.card}>
           <div>
-            <span>Entradas</span>
-            <span><img src={total} alt="income" /></span>
+            <span>Total</span>
+            <span><img src={total} alt="Total" /></span>
           </div>
-          <span>R$ 10,00</span>
+          <span className={styles.value}>R$ 10,00</span>
         </div>
         
       </main>

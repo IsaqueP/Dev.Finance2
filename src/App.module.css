@@ -25,25 +25,44 @@
   justify-content: center;
   gap: 2rem;
   position: absolute;
-  top: 9rem;
+  top: 9.4rem;
   margin: 0 auto;
   width: 100vw;
 }
 
-main .card{
-  width: 13rem;
-  height: 7rem;
-  background-color: gray;
+.card{
+  width: 12.4rem;
+  background-color: white;
   display: flex;
-  color: white;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.3rem;
   justify-content: space-between;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
-main .card div{
+.card div{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: var(--dark-blue);
 }
 
+.card div span:last-child{
+  height: 2rem;
+}
+
+.card .value{
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin-top: 1rem;
+  height: 42px;
+}
+
+.page main div:last-child{
+  background-color: var(--green);
+  color: white;
+}
+
+.page main div:last-child span{
+  color: white;
+}
